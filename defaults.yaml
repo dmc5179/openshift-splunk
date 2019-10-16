@@ -1,0 +1,78 @@
+---
+ansible_post_tasks: null
+ansible_pre_tasks: null
+cert_prefix: https
+config:
+  baked: default.yml
+  defaults_dir: /tmp/defaults
+  env:
+    headers: null
+    var: SPLUNK_DEFAULTS_URL
+    verify: true
+  host:
+    headers: null
+    url: null
+    verify: true
+  max_delay: 60
+  max_retries: 3
+  max_timeout: 1200
+hide_password: false
+retry_num: 50
+shc_bootstrap_delay: 30
+splunk:
+  admin_user: admin
+  allow_upgrade: true
+  app_paths:
+    default: /opt/splunk/etc/apps
+    deployment: /opt/splunk/etc/deployment-apps
+    httpinput: /opt/splunk/etc/apps/splunk_httpinput
+    idxc: /opt/splunk/etc/master-apps
+    shc: /opt/splunk/etc/shcluster/apps
+  enable_service: false
+  exec: /opt/splunk/bin/splunk
+  group: splunk
+  hec_disabled: 0
+  hec_enableSSL: 1
+  hec_port: 8088
+  hec_token: 036c679c-d11c-419b-88ce-fd9af762b8d3
+  home: /opt/splunk
+  http_enableSSL: 0
+  http_enableSSL_cert: null
+  http_enableSSL_privKey: null
+  http_enableSSL_privKey_password: null
+  http_port: 8000
+  idxc:
+    enable: false
+    label: idxc_label
+    replication_factor: 3
+    replication_port: 9887
+    search_factor: 3
+    secret: +7FLz/qkGVb7VJbzhDJaHNVlD4qfZD26
+  ignore_license: false
+  license_download_dest: /tmp/splunk.lic
+  multisite_replication_factor_origin: 3
+  multisite_replication_factor_total: 3
+  multisite_search_factor_origin: 3
+  multisite_search_factor_total: 3
+  nfr_license: /tmp/nfr_enterprise.lic
+  opt: /opt
+  password: FsHixIoI2ql+6yQZ6PO8KvkVkTZDrnN7
+  pid: /opt/splunk/var/run/splunk/splunkd.pid
+  root_endpoint: null
+  s2s_enable: true
+  s2s_port: 9997
+  search_head_cluster_url: null
+  secret: null
+  shc:
+    enable: false
+    label: shc_label
+    replication_factor: 3
+    replication_port: 9887
+    secret: n5Qle5yIiFq+Bky07IlBO5uA1xuMiXzR
+  smartstore: null
+  svc_port: 8089
+  tar_dir: splunk
+  user: splunk
+  wildcard_license: false
+splunk_home_ownership_enforcement: true
+
